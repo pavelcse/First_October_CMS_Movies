@@ -1,0 +1,33 @@
+title = "Contact Details"
+url = "/contacts/contact/:slug"
+layout = "default"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "Pavel\Contact\Models\Contact"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "name"
+notFoundMessage = "Record not found"
+==
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+{% if record %}
+    <h4>Name</h4>
+    <p>{{ record.name }}</p>
+    <img src="{{record.image.thumb(200, auto)}}" alt="">
+
+    <h4>Email</h4>
+    {{ record.email }}
+
+    <h4>Phone</h4>
+    {{ record.phone }}
+
+    <h4>Message</h4>
+    {{ record.message|raw }}
+
+{% else %}
+    {{ notFoundMessage }}
+{% endif %}

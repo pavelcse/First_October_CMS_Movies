@@ -1,0 +1,14 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table pavel_movies_'
+    - builder_table_create_pavel_movies_.php
+1.0.3:
+    - 'Updated table pavel_movies_'
+    - builder_table_update_pavel_movies_.php
+1.0.4:
+    - 'Created table pavel_movies_genres'
+    - builder_table_create_pavel_movies_genres.php
+1.0.5:
+    - 'Created table pavel_movies_movies_genres'
+    - builder_table_create_pavel_movies_movies_genres.php

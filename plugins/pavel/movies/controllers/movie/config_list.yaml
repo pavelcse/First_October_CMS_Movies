@@ -1,0 +1,12 @@
+list: $/pavel/movies/models/movie/columns.yaml
+modelClass: Pavel\Movies\Models\Movie
+title: Movie
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'pavel/movies/movie/update/:id'

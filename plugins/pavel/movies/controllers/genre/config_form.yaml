@@ -1,0 +1,10 @@
+name: Genre
+form: $/pavel/movies/models/genre/fields.yaml
+modelClass: Pavel\Movies\Models\Genre
+defaultRedirect: pavel/movies/genre
+create:
+    redirect: 'pavel/movies/genre/update/:id'
+    redirectClose: pavel/movies/genre
+update:
+    redirect: pavel/movies/genre
+    redirectClose: pavel/movies/genre

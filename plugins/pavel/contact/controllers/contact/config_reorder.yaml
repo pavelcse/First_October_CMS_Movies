@@ -1,0 +1,4 @@
+title: Contact
+modelClass: Pavel\Contact\Models\Contact
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,12 @@
+list: $/pavel/movies/models/genre/columns.yaml
+modelClass: Pavel\Movies\Models\Genre
+title: Genre
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'pavel/movies/genre/update/:id'

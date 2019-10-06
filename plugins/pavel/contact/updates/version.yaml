@@ -1,0 +1,8 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table pavel_contact_'
+    - builder_table_create_pavel_contact_.php
+1.0.3:
+    - 'Updated table pavel_contact_'
+    - builder_table_update_pavel_contact_.php

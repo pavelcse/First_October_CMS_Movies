@@ -1,0 +1,46 @@
+title = "Movie Details"
+url = "/movies/movie/:slug"
+layout = "default"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "Pavel\Movies\Models\Movie"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "name"
+notFoundMessage = "Record not found"
+==
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+{% if record %}
+<h3>{{ record.name }}</h3>
+<img src="{{record.poster.thumb(200, auto)}}" alt="">
+<p> {{ record.year }}</p>
+
+<h3>Description</h3>
+{{ record.description|raw }}
+
+<h3>Gallery</h3>
+<div class="row">
+    {% for image in record.movie_gallery %}
+        <div class="col-sm-2 col-md-1 clearfix">
+            <a href="{{image.path}}">
+                <img src="{{image.thumb(80,80, {'mode':'crop'})}}" alt="">
+            </a>
+        </div>
+    {% endfor %}
+</div>
+
+<h3>Genre</h3>
+<ul>
+    {% for genre in record.genres %}
+        <li>{{genre.genre_title}}</li>
+    {% endfor %}
+</ul>
+
+
+{% else %}
+    {{ notFoundMessage }}
+{% endif %}

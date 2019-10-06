@@ -1,0 +1,10 @@
+name: Movie
+form: $/pavel/movies/models/movie/fields.yaml
+modelClass: Pavel\Movies\Models\Movie
+defaultRedirect: pavel/movies/movie
+create:
+    redirect: 'pavel/movies/movie/update/:id'
+    redirectClose: pavel/movies/movie
+update:
+    redirect: pavel/movies/movie
+    redirectClose: pavel/movies/movie

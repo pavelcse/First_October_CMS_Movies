@@ -1,0 +1,11 @@
+plugin:
+    name: 'pavel.contact::lang.plugin.name'
+    description: 'pavel.contact::lang.plugin.description'
+    author: pavel
+    icon: oc-icon-comment
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Contact
+        url: pavel/contact/contact
+        icon: icon-comment

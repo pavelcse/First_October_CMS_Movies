@@ -1,0 +1,10 @@
+name: Contact
+form: $/pavel/contact/models/contact/fields.yaml
+modelClass: Pavel\Contact\Models\Contact
+defaultRedirect: pavel/contact/contact
+create:
+    redirect: 'pavel/contact/contact/update/:id'
+    redirectClose: pavel/contact/contact
+update:
+    redirect: pavel/contact/contact
+    redirectClose: pavel/contact/contact

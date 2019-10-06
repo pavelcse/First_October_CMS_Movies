@@ -1,0 +1,16 @@
+plugin:
+    name: 'pavel.movies::lang.plugin.name'
+    description: 'pavel.movies::lang.plugin.description'
+    author: pavel
+    icon: oc-icon-video-camera
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Movies
+        url: pavel/movies/movie
+        icon: icon-video-camera
+        sideMenu:
+            side-menu-item:
+                label: Genres
+                url: pavel/movies/genre
+                icon: icon-tags

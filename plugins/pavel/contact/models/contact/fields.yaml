@@ -1,0 +1,36 @@
+fields:
+    name:
+        label: Name
+        span: full
+        type: text
+    email:
+        label: Email
+        span: full
+        type: text
+    phone:
+        label: Phone
+        span: full
+        type: text
+    message:
+        label: Message
+        size: ''
+        span: full
+        type: richeditor
+    slug:
+        label: Slug
+        span: full
+        preset:
+            field: name
+            type: slug
+        type: text
+    image:
+        label: Image
+        mode: image
+        imageWidth: '100'
+        imageHeight: '100'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        type: fileupload
